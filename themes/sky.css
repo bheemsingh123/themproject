@@ -1,0 +1,118 @@
+
+:root {
+  --back-color: red;
+  --primary-color: #3c366b;
+  --header-back: #5f718d;
+  --header-text: #eee;
+}
+
+body {
+  background-color: var(--back-color);
+  color: var(--primary-color);
+  content: "";
+
+  
+}
+
+.rain1 {
+     background-color: #36454f;
+     /*background-image: url(https://www.birdlife.org/wp-content/uploads/2020/11/kingfisher-perched.jpg);*/
+     background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/20200828184719/rain-300x300.png);
+     animation: rain .5s linear infinite;
+     opacity: 1;
+     color: blue;
+}
+@keyframes rain {
+        0% {
+          background-position: 100 100;
+          opacity: 1;
+        }
+
+        100% {
+          background-position: 8% 80%;
+          opacity: 1
+        }
+      }
+section {
+   animation: rain 0.5s linear infinite;
+   opacity: 0;
+}
+
+header {
+  background-color: var(--header-back);
+  color: var(--header-text);
+  /*background-image: url(https://www.birdlife.org/wp-content/uploads/2020/11/kingfisher-perched.jpg);*/
+
+  
+}
+
+
+.cardd{
+  background-color:palegreen;
+  color: #702963;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.box img {
+  border: 2px solid var(--primary-color);
+
+  animation: color-change 5s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes color-change {
+        0% {
+          filter: hue-rotate(0deg);
+        }
+        50% {
+          filter: hue-rotate(0deg);
+        }
+        100% {
+          filter: hue-rotate(360deg);
+        }
+      }*/
+
+
+/*:root {
+  --back-color: #c3dafe;
+  --primary-color: #3c366b;
+  --header-back: #5f718d;
+  --header-text: #eee;
+}
+
+body {
+  background-color: var(--back-color);
+  color: var(--primary-color);
+}
+
+header {
+  background-color: var(--header-back);
+  color: var(--header-text);
+}
+
+.box img {
+  border: 2px solid var(--primary-color);
+}
+*/

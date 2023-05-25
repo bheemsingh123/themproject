@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- <link href="https://fonts.oClick om/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" id="switcher-id" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<style type="text/css">
+  
+
+
+  .sizel{
+    height: 500px;
+    width:100%;
+  }
+
+  .position{
+    margin: auto;
+  }
+
+  .backcol{
+    background-color:#008080;
+  }
+
+  .box1{
+     box-shadow: 10px 15px 50px 0px rgba(255, 165, 0, 1);
+  }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg bg-warning ">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="index.html"><img src="https://store.suitecrm.com/assets/img/addons/suitecrm-calculative-field/logo.png?1644951288" height="70px" width="70px"></a>
+      <a class="navbar-brand" href="index.html"><h3 class="logoh">CWeb</h3></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link  c text-dark" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link c text-dark" href="#">Service</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle c text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Calculators
+            </a>
+            <ul class="dropdown-menu" id="h">
+              <li><a class="dropdown-item c" href="age.html">Age calculator</a></li>
+              <li><a class="dropdown-item c" href="simplecal.html">Simple calculator</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item c" href="#">More</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle c text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Converters
+            </a>
+            <ul class="dropdown-menu" id="h">
+              <li><a class="dropdown-item c" href="lengthconvertor.html">Length convertor</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item c" href="#">More</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link c text-dark" href="charts.html">Conversion Charts</a>
+          </li>
+          
+        </ul>
+       <!--  <div class="theme-switches">
+
+          <div data-theme="light" class="btn btn-sm btn-primary switch text-center" id="switch-1">Brown</div>
+
+          <div data-theme="sky" class="btn btn-sm btn-primary switch text-center" id="switch-2">Rain</div>
+
+          <div data-theme="purple" class="btn btn-sm btn-primary switch text-center" id="switch-3">Blue</div>
+
+          <div data-theme="dark" class="btn btn-sm btn-primary switch text-center" id="switch-4">Black</div>
+
+        </div> -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row sizel">
+
+<div class="col-4  "></div>
+<div class="col-4 border border-2   m-auto border-primary rounded-2 mt-5  mb-5 box1">
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary   mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ &nbsp; Length Chart &nbsp;
+</button>
+
+<!-- Modal -->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content backcol">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Length Chart</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <pre class="text-white">
+1 Centimeter = 10 Millimeters
+1 cm = 10 mm
+1 Decimeter = 10 Centimeters
+1 dm = 10 cm
+1 Meter = 100 Centimeters
+1 m = 100 cm
+1 Kilometer = 1000 Meters
+1 km = 1000 m
+1 Meter = 10 Decimeter
+1 m = 10 dm
+1 Foot = 12 Inches
+1 ft = 12 in
+1 Inch = 2.54 Centimeters
+1 in = 2.54 cm
+1 Yard = 3 Feet
+1 yd = 3 ft
+1 Yard = 36 Inches
+1 yd = 36 in
+1 Mile = 1.61 Kilometers
+1 mile = 1.61 km
+      </pre class="text-white">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary position ml-5 mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+ &nbsp; &nbsp;Area Chart&nbsp;&nbsp;
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content backcol">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Area Chart</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <pre class="text-white">
+        
+Area
+1 sq. inch = 6.4516 sq. centimeters
+1 sq. centimeter = 0.1550 sq. inches
+1 sq. foot = 0.0929 sq. meters
+1 sq. meter = 1.195986 sq. yards
+1 sq. yard = 0.83613 sq. meters
+1 sq. kilometer = 0.386101 sq. miles
+1 sq. mile = 2.589999 sq. kilometers
+1 hectare = 2.471044 acres
+1 acre = 0.404687 hectares
+      </pre class="text-white">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary position ml-5 mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+ &nbsp;&nbsp; Mass Chart &nbsp;&nbsp;
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content backcol">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-white" id="exampleModalLabel2">Mass Chart</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <pre class="text-white">
+Mass (Weight)
+1 grain = 0.05 scruples = 0.016667 drams = 0.00208 ounces
+1 ounce = 28.3495 grams
+1 gram = 0.03527396 ounces
+1 pound = 16 oz = 0.4535924 kilograms
+1 kilogram = 2.2046223 pounds
+1 short ton = 0.892857 metric ton
+1 metric ton = 1.1200 short tons
+1 long ton = 1.01605 metric tons
+ 
+
+
+
+      </pre class="text-white">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary position ml-5 mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+  Volume Chart
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content backcol">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-white" id="exampleModalLabel3">Volume Chart</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <pre class="text-white">
+Volume
+1 teaspoon = 5 milliliters
+1 milliliter = 0.0338147 fluid ounces
+1 tablespoon = 15 milliliters
+1 liter = 2.11342 pints = 1000 cubic centimeters
+1 fluid ounce = 30 milliliters
+1 liter = 1.05671 quarts = 0.264178 gallons
+1 gallon = 3.785332 liters = 231 cubic inches
+1 cup = 0.23658 liters
+1 pint = 0.473167 liters
+1 cubic meter = 35.3144 cubic feet = 1.30794 cubic yards
+1 cubic foot = 0.0283170 cubic meters
+1 cubic yard = 0.764559 cubic meters
+ 
+
+
+
+      </pre class="text-white">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary position ml-5 mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+  Temperature Chart
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content backcol">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-white" id="exampleModalLabel4">Temperature Chart</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <pre class="text-white">
+Temperature
+
+Fahrenheit Subtract 32, then multiply by 5/9ths Celsius
+Celsius Multiply by 9/5ths, then add 32 Fahrenheit
+
+
+1 Celsius = 274.15 Kelvin
+1 C = 274.15 K
+1 Celsius = 33.8 Fahrenheit
+1 C = 33.8 F
+1 Kelvin = -2.72.15 Celsius
+1 K = -2.72.15 C
+1 Kelvin = -457.87 Fahrenheit
+1 = -457.87 F
+1 Fahrenheit = -17.22 Celsius
+1 F = -17.22 C
+1 Fahrenheit = 255.93 Kelvin
+1 F = 255.93 K
+ 
+
+
+
+      </pre class="text-white">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary position ml-5 mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+  Time Chart
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content backcol">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-white" id="exampleModalLabel5">Time Chart</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <pre class="text-white">
+1 hour = 60 minutes
+
+1 hr = 60 min
+
+1 minute = 60 seconds
+
+1 min = 60 s
+
+1 hour = 3600 seconds
+
+1 hr = 3600 s
+
+1 day = 24 hours
+
+1 day = 24 hrs
+ 
+
+
+
+      </pre class="text-white">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+<div class="col-4  "></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+   <footer class="container-fluid bg-warning text-dark"
+  class="text-center text-lg-start text-white"
+  style="background-color: #929fba"
+  >
+  <!-- Grid container -->
+  <div class="container  pb-0">
+    <!-- Section: Links -->
+    <section class="container-fluid">
+      <!--Grid row-->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class=" mb-4 font-weight-bold">
+            <span class="">C</span><span class="">Web</span>
+          </h6>
+          <p>
+            We provide different calculators <br>We are also providing different convertors
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none" />
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+          <p>
+            <a class="">Calculators</a>
+          </p>
+          <p>
+            <a class="">Convertors</a>
+          </p>
+          <p>
+            <a class="">Charts</a>
+          </p>
+          <p>
+            <a class="">More</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none" />
+
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none" />
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p><i class="fas fa-home mr-3"></i> Bhopal, BPL 462026, India</p>
+          <p><i class="fas fa-envelope mr-3"></i> Cweb@gmail.com</p>
+          <p><i class="fas fa-phone mr-3"></i> + 91 9109637459</p>
+          <p><i class="fas fa-print mr-3"></i> + 91 8358814566</p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+          <!-- Facebook -->
+          <a
+          class="btn btn-primary rounded-circle btn-floating m-1"
+          style="background-color: #3b5998"
+          href="#!"
+          role="button"
+          ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+          class="btn btn-primary rounded-circle btn-floating m-1"
+          style="background-color: #55acee"
+          href="#!"
+          role="button"
+          ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+          class="btn btn-primary rounded-circle btn-floating m-1"
+          style="background-color: #dd4b39"
+          href="#!"
+          role="button"
+          ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+          class="btn btn-primary rounded-circle btn-floating m-1"
+          style="background-color: #ac2bac"
+          href="#!"
+          role="button"
+          ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+          class="btn btn-primary rounded-circle btn-floating m-1"
+          style="background-color: #0082ca"
+          href="#!"
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+          class="btn btn-primary rounded-circle btn-floating m-1"
+          style="background-color: #333333"
+          href="#!"
+          role="button"
+          ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div
+  class="text-center p-3"
+  style="background-color: rgba(0, 0, 0, 0.2)"
+  >
+  © 2022 Copyright:
+  <a class="" href="#"
+  >created by <span class="">Bheem singh</span></a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</body>
+<script type="text/javascript">
+ 
+
+//  const toastTrigger1 = document.getElementById('liveToastBtn1')
+// const toastLiveExample1 = document.getElementById('liveToast1')
+// if (toastTrigger1) {
+//   toastTrigger1.addEventListener('click', () => {
+//     const toast1 = new bootstrap.Toast(toastLiveExample1)
+
+//     toast1.show()
+//   })
+// }
+
+
+
+
+//  const toastTrigger2 = document.getElementById('liveToastBtn2')
+// const toastLiveExample2 = document.getElementById('liveToast2')
+// if (toastTrigger2) {
+//   toastTrigger2.addEventListener('click', () => {
+//     const toast2 = new bootstrap.Toast(toastLiveExample2)
+
+//     toast2.show()
+//   })
+// }
+
+
+
+//  const toastTrigger3 = document.getElementById('liveToastBtn3')
+// const toastLiveExample3 = document.getElementById('liveToast3')
+// if (toastTrigger3) {
+//   toastTrigger3.addEventListener('click', () => {
+//     const toast3 = new bootstrap.Toast(toastLiveExample3)
+
+//     toast3.show()
+//   })
+// }
+</script>
+</html>

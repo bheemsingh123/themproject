@@ -1,0 +1,34 @@
+:root {
+  --back-color: red;
+  --primary-color: #000000;
+  --header-back: #5d5d5d;
+  --header-text: #954535;
+}
+
+/*body {
+  background-color: green;
+  color: var(--primary-color);
+}
+
+header {
+  background-color: var(--header-back);
+  color: var(--header-text);
+}*/
+
+.box img {
+  border: 2px solid var(--primary-color);
+}
+.rain1{
+  background-color: #954535;
+  color: white;
+}
+.c{
+  color: #954535;
+  font-family: cursive;
+}
+
+.cardd{
+  background-color:#355e3b;
+  color: red;
+  border:5px solid slateblue;
+}
